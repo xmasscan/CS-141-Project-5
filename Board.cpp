@@ -165,13 +165,13 @@ void Board::getBoard()
 			switch(board[0][(3 * i) + j].getSize())
 			{
 				case -1:
-					printf("%c%d", ' ', (3 * i) + j);
+					printf("%c%d", ' ', (3 * i) + j + 1);
 					break;
 				case 0:
-					printf("%c%d", board[0][(3 * i) + j].getColor(), (3 * i) + j);
+					printf("%c%d", board[0][(3 * i) + j].getColor(), (3 * i) + j + 1);
 					break;
 				case 1:
-					printf("%c%d", toupper(board[0][(3 * i) + j].getColor()), (3 * i) + j );
+					printf("%c%d", toupper(board[0][(3 * i) + j].getColor()), (3 * i) + j + 1);
 					break;
 				case 2:
 					printf("%c%c", toupper(board[0][(3 * i) + j].getColor()), toupper(board[0][(3 * i) + j].getColor()));

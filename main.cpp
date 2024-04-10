@@ -3,7 +3,7 @@
 int main()
 {
 	Board myBoard = Board();
+	myBoard.addPiece('r', 2, 3);
 	myBoard.getBoard();
-//	myBoard.addPiece('r', 2, 3);
 	return 0;
 }

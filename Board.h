@@ -22,6 +22,7 @@ class Board
 		char getState();
 		void addPiece(char newColor, int size, int cell);
 		void getBoard();
+                GamePiece getCell(int cell);
 		Board();
 };
 

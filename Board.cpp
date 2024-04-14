@@ -151,6 +151,10 @@ void Board::addPiece(char color, int size, int cell)
 {
 	board[0][cell - 1] = GamePiece(color, size); 
 }
+GamePiece Board::getCell(int cell)
+{
+    return board[0][cell - 1];
+}
 void Board::getBoard()
 {
 	std::string currentCell;
@@ -192,3 +196,4 @@ void Board::getBoard()
 		}
 	}
 }
+
